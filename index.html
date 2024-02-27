@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nambi_Rajan Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header class="container header">
+      <div class="page-header">
+        <div class="logo">
+          <a href="#">Logo.</a>
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="mainicon">
+          <div class="menu">
+            <i class="bx bx-menu"></i>
+          </div>
+        </label>
+        <ul>
+          <li>
+            <a href="#container" class="active" style="--navAni: 1">Home</a>
+          </li>
+          <li><a href="#skill-section" style="--navAni: 3">Skills</a></li>
+          <li><a href="#projects" style="--navAni: 4">Portfolio</a></li>
+          <li><a href="#" style="--navAni: 2">About</a></li>
+          <li><a href="#contact-container" style="--navAni: 5">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="container" class="container">
+      <div class="main">
+        <div class="rounding-sec">
+          <div class="big-circle">
+            <div class="icon-block">
+              <img id="github-logo" src="./icons/github.png" alt="github" />
+            </div>
+            <div class="icon-block">
+              <img
+                id="whatsappChatButton"
+                src="./icons/whatsapp.png"
+                alt="whatsapp"
+              />
+            </div>
+            <div class="icon-block">
+              <img id="openGmailButton" src="./icons/email.png" alt="email" />
+            </div>
+            <div class="icon-block">
+              <img
+                id="linkedin-logo"
+                src="./icons/linkedin.png"
+                alt="linkedin"
+              />
+            </div>
+          </div>
+          <div class="images">
+            <img
+              src="./icons/IMG_20220720_225251_592.jpg"
+              alt=""
+              class="img-w"
+            />
+          </div>
+        </div>
+        <div class="detail">
+          <h3>Hi, I'm</h3>
+          <h1>
+            <span class="name">Nambi Rajan M</span><br />
+            <h2 class="role">Full Stack Developer</h2>
+          </h1>
+          <p>
+            Passionate Full Stack Developer dedicated to building seamless web
+            experiences. Expertise in frontend and backend technologies to
+            deliver dynamic solutions
+          </p>
+          <button id="download-resume">
+            <a href="Nambi_Rajan_M.pdf">Download Resume</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill-section" class="Skills-container">
+      <div class="skills-heading">Skills</div>
+      <div id="skills">
+        <div id="frontend-technlogies" class="Skills">
+          <h2>Frontend Technologies</h2>
+          <img src="./icons/html-5.png" alt="html5" />
+          <img src="./icons/css-3.png" alt="css3" />
+          <img src="./icons/js.png" alt="javascript" />
+          <img src="./icons/typescript.png" alt="typescript" />
+        </div>
+
+        <div id="backend-technologies" class="Skills">
+          <h2>Backend Technologies</h2>
+          <img src="./icons/api.png" alt="api" />
+          <img src="./icons/mysql.png" alt="mysql" />
+          <img src="./icons/nodejs.png" alt="node.js" />
+          <img src="./icons/php.png" alt="php" />
+        </div>
+
+        <div id="framework-technologies" class="Skills">
+          <h2>Frameworks</h2>
+          <img src="./icons/sass.png" alt="sass" />
+          <img src="./icons/atom.png" alt="react.js" />
+          <img src="./icons/bootstrap.png" alt="bootstrap5" />
+          <img
+            src="./icons/expressJS.png"
+            class="framework-icons"
+            alt="express.js"
+          />
+          <img
+            src="./icons/pngwing.com.png"
+            alt="next.js"
+            class="framework-icons"
+          />
+        </div>
+
+        <div id="tools" class="Skills">
+          <h2>Tools</h2>
+          <img src="./icons/github(2).png" alt="github" />
+          <img src="./icons/office.png" alt="ms-office" />
+          <img src="./icons/icons8-canva-48.png" alt="canva" />
+          <img src="./icons/icons8-npm-48.png" alt="npm" />
+          <img src="./icons/icons8-vs-code-48.png" alt="vs-ode" />
+          <img src="./icons/figma.png" alt="figma" />
+          <img src="./icons/photoshop-lightroom.png" alt="lightroom" />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="projects">Portfolio</div>
+      <div id="projects-wrapper">
+        <div class="projects-wrap" id="password-encryption">
+          <h2 class="projects-heading">
+            An User Authentication Security Password Based On Cryptographic
+          </h2>
+          <p class="projects-description">
+            User authentication verifies the identity of a user attempting to
+            gain access to a network or computing resource by authorizing a
+            human-to-machine transfer of credentials during Interactions on a
+            network to confirm a user's authenticity
+          </p>
+        </div>
+
+        <div class="projects-wrap" id="calculator">
+          <h2 class="projects-heading">Scientific Calculator</h2>
+          <p class="projects-description">
+            A scientific calculator is a calculator to help you calculate
+            science, engineering, and mathematics problems. It has special
+            buttons for parentheses, trigonometric functions, exponents,
+            inverses of trigonometric functions, and π.
+          </p>
+        </div>
+
+        <div id="password-generator" class="projects-wrap">
+          <h2 class="projects-heading">Password Generator</h2>
+          <p class="projects-description">
+            Password Generator App helps to create strong random passwords which
+            can be easily used during authentication.
+          </p>
+        </div>
+
+        <div id="text-to-speech" class="projects-wrap">
+          <h2 class="projects-heading">Text to Speech</h2>
+          <p class="projects-description">
+            Text to Speech App is a simple text to speech converter where you
+            can write can listen to it..
+          </p>
+        </div>
+
+        <div id="todo-list" class="projects-wrap">
+          <h2 class="projects-heading">Todo List</h2>
+          <p class="projects-description">
+            Simple TO-DO List are the lists that we generally use to maintain
+            our day to day tasks or list of everything that we have to do, with
+            the most important tasks at the top of the list, and the least
+            important tasks at the bottom. It is helpful in planning our daily
+            schedules.
+          </p>
+        </div>
+
+        <div class="projects-wrap" id="weather-app">
+          <h2 class="projects-heading">Weather App</h2>
+          <p class="projects-description">
+            Simple Weather app using the APIs for fetching weather and
+            geolocation information.
+          </p>
+        </div>
+
+        <div id="buspass-generator" class="projects-wrap">
+          <h2 class="projects-heading">Buspass Generator</h2>
+          <p class="projects-description">
+            A bus pass generator app is a application designed to streamline the
+            process of creating and managing bus passes for commuters
+          </p>
+        </div>
+
+        <div id="bmi-calculator" class="projects-wrap">
+          <h2 class="projects-heading">BMI Calculator</h2>
+          <p class="projects-description">
+            BMI calculator can be used to calculate body mass index of people.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="about">
+        <div id="about">About me</div>
+        <div class="about-wrapper">
+          <p class="about-me">
+            Emerging Full Stack Developer proficient in frontend technologies
+            including HTML, CSS, Bootstrap, React, and Next.js, complemented by
+            backend expertise in Node.js, Express.js, and PHP. Experienced in
+            database management with MySQL and PostgreSQL. Proficient in
+            utilizing Figma for design implementation. With a dedication to
+            continuous learning and a passion for delivering high-quality
+            solutions, I am poised to contribute effectively to projects and
+            teams.
+          </p>
+
+          <div class="Work-experience">Work Experiences</div>
+
+          <div class="experience intern">
+            <div class="experience-head">
+              <h4>Full Stack Developer Intern</h4>
+              <h5>Ideadevy Technologies</h5>
+              <h6>[ Sept 2023 - At Present ]</h6>
+            </div>
+
+            <div class="ideadevy work-content">
+              <div>
+                Proficient in front-end development utilizing HTML, CSS, and
+                JavaScript.
+              </div>
+              <div>
+                Skilled in implementing responsive designs and creating
+                user-friendly interfaces.
+              </div>
+              <div>
+                Experienced in back-end development with technologies such as
+                Node.js, Express.js, and PHP.
+              </div>
+              <div>
+                Active participation in code reviews and debugging sessions to
+                ensure code quality and functionality.
+              </div>
+              <div>
+                Proficient in database management and data modeling, ensuring
+                efficient data organization and retrieval.
+              </div>
+            </div>
+          </div>
+
+          <div class="intern afs">
+            <div class="experience-head">
+              <h4>Equity Relationship Manager</h4>
+              <h5>Anandh Financial Services</h5>
+              <h6>[ Dec 2021 - Mar 2022 ]</h6>
+            </div>
+            <div class="afs-content work-content">
+              <div>
+                Built and nurtured positive relationships with high-net-worth
+                clients.
+              </div>
+              <div>
+                Identified investment opportunities and provided personalized
+                financial advice.
+              </div>
+              <div>Conducted market research and competitor analysis.</div>
+              <div>
+                Managed client portfolios and ensured compliance with
+                regulations.
+              </div>
+            </div>
+          </div>
+
+          <div class="intern">
+            <div class="experience-head">
+              <h4>Customer Associative Executive</h4>
+              <h5>Tech Mahindra Limited</h5>
+              <h6>[ Sep 2021 - Nov 2021 ]</h6>
+            </div>
+            <div class="tech-m work-content">
+              <div>
+                Flexibility is crucial in a dynamic customer service
+                environment.
+              </div>
+              <div>
+                Actively listened to customer's concerns and addressed
+                complaints.
+              </div>
+              <div>
+                Emphasize your positive demeanor and willingness to assist
+                customers.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-container">
+      <div id="contact">Let us work Together</div>
+      <div id="contact-space">
+        <span class="contact-span">
+          <img
+            src="./icons/phone-call.png"
+            alt="phone"
+            class="contact contact-mobile_no"
+          />
+          <span>+91 9025106030</span>
+        </span>
+
+        <span class="contact-span">
+          <img
+            src="./icons/email.png"
+            alt="email"
+            class="contact contact-email"
+          />
+          <span>akashtechie1852@gmail.com</span>
+        </span>
+
+        <span class="contact-span">
+          <img
+            src="./icons/linkedin.png"
+            alt="linkedin"
+            class="contact contact-linkedin"
+          />
+          <span>LinkedIn</span>
+        </span>
+
+        <span class="contact-span">
+          <img
+            src="./icons/github(2).png"
+            alt="github"
+            class="contact contact-github"
+          />
+          <span>GitHub</span>
+        </span>
+
+        <span class="contact-span">
+          <img
+            src="./icons/portfolio.png"
+            alt="portfolio"
+            class="contact contact-portfolio"
+          />
+          <span>Portfolio Link</span>
+        </span>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("github-logo")
+        .addEventListener("click", function () {
+          window.location.href = "https://github.com/akashtechie-1852";
+        });
+
+      document
+        .getElementById("linkedin-logo")
+        .addEventListener("click", function () {
+          window.location.href =
+            "https://www.linkedin.com/in/akash-techie-71b1512b2/";
+        });
+
+      document
+        .getElementById("whatsappChatButton")
+        .addEventListener("click", function () {
+          // Replace the number with the desired WhatsApp number
+          var whatsappNumber = "+919025106030";
+          var whatsappMessage = "Hello!"; // You can change the default message if needed
+
+          // Construct the WhatsApp URL
+          var whatsappUrl =
+            "https://wa.me/" +
+            encodeURIComponent(whatsappNumber) +
+            "?text=" +
+            encodeURIComponent(whatsappMessage);
+
+          // Open the WhatsApp chat in a new tab
+          window.open(whatsappUrl, "_blank");
+        });
+
+      document
+        .getElementById("openGmailButton")
+        .addEventListener("click", function () {
+          var email = "akashtechie1852@gmail.com";
+          var subject = "Subject of the email"; // You can change the default subject if needed
+          var body = "Body of the email"; // You can change the default body if needed
+
+          // Construct the mailto URL with the email address, subject, and body
+          var mailtoUrl =
+            "mailto:" +
+            encodeURIComponent(email) +
+            "?subject=" +
+            encodeURIComponent(subject) +
+            "&body=" +
+            encodeURIComponent(body);
+
+          // Open the default email client (Gmail) with the new email
+          window.open(mailtoUrl);
+        });
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactSpans = document.querySelectorAll(".contact-span");
+
+        contactSpans.forEach((contactSpan) => {
+          contactSpan.addEventListener("click", function () {
+            const linkText = this.querySelector("span").innerText;
+            let link;
+
+            switch (linkText) {
+              case "+91 9025106030":
+                link = "tel:+919025106030";
+                break;
+              case "akashtechie1852@gmail.com":
+                link = "mailto:akashtechie1852@gmail.com";
+                break;
+              case "LinkedIn":
+                link = "https://www.linkedin.com/";
+                break;
+              case "GitHub":
+                link = "https://github.com/";
+                break;
+              case "Portfolio Link":
+                link = "https://your-portfolio-link.com/";
+                break;
+              default:
+                link = "#"; // Default to '#' if no matching link found
+            }
+
+            window.location.href = link;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -278,14 +278,27 @@ h1 .role {
 .Skills {
   display: flex;
   overflow: hidden;
-  animation: moveLeftToRight 4s linear forwards; /* Change 'infinite' to 'forwards' to run only once */
 }
+
+/* .Skills.animate {
+  opacity: 1;   
+} */
 
 .reverse {
   display: flex;
   overflow: hidden;
-  animation: moveRightToLeft 4s linear forwards; /* Change 'infinite' to 'forwards' to run only once */
 }
+/* .reverse {
+  display: flex;
+  overflow: hidden;
+  animation: moveRightToLeft 4s linear forwards;
+} */
+
+/* .reverse.animate {
+  display: flex;
+  overflow: hidden;
+  animation: moveRightToLeft 4s linear forwards;
+} */
 
 .Skills img {
   margin: 0;
@@ -595,21 +608,22 @@ h1 .role {
     opacity: 1;
   }
 }
+/* Define the animation */
 @keyframes moveLeftToRight {
-  0% {
-    transform: translateX(100%);
+  from {
+    transform: translateX(-100%);
   }
-  100% {
-    transform: translateX(0%);
+  to {
+    transform: translateX(0);
   }
 }
 
 @keyframes moveRightToLeft {
-  0% {
-    transform: translateX(-100%);
+  from {
+    transform: translateX(100%);
   }
-  100% {
-    transform: translateX(0%);
+  to {
+    transform: translateX(0);
   }
 }
 

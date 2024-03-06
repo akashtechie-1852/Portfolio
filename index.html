@@ -144,7 +144,7 @@
             style="width: 190px"
           />
         </div>
-        <div class="Skills" style="margin: -50px 0 0 200px">
+        <div class="Skills reverse" style="margin: -50px 0 0 200px">
           <img src="./icons/npm.svg" alt="npm" />
           <img src="./icons/vs code.svg" alt="vs-ode" />
           <img src="./icons/figma.svg" alt="figma" />
@@ -152,6 +152,17 @@
             src="./icons/photoshop.svg"
             alt="lightroom"
             style="width: 190px"
+          />
+        </div>
+
+        <div id="framework-technologies" class="Skills">
+          <h2 class="skills-h2">Familiar OS :</h2>
+          <img src="./icons/sass.svg" alt="sass" />
+          <img src="./icons/react.svg" alt="react.js" />
+          <img
+            src="./icons/bootstrap.svg"
+            alt="bootstrap5"
+            style="width: 125px"
           />
         </div>
       </div>
@@ -434,6 +445,44 @@
             window.location.href = link;
           });
         });
+      });
+      // Function to handle intersection changes
+      function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Check if the entry is entering or leaving the viewport
+            const isInViewport = entry.intersectionRatio >= 1;
+            let animationName = "moveLeftToRight";
+
+            // Check if the element has both class names ".Skills" and ".reverse"
+            if (
+              entry.target.classList.contains("Skills") &&
+              entry.target.classList.contains("reverse")
+            ) {
+              animationName = isInViewport
+                ? "moveRightToLeft"
+                : "moveLeftToRight";
+            }
+
+            // Apply animation to the element
+            entry.target.style.animation = `${animationName} 4s linear forwards`;
+
+            // Stop observing once animated
+            observer.unobserve(entry.target);
+          }
+        });
+      }
+
+      // Create a new Intersection Observer
+      const observer = new IntersectionObserver(handleIntersection, {
+        rootMargin: "0px",
+        threshold: 1,
+      });
+
+      // Get all elements with class "Skills" and observe them
+      const skillSections = document.querySelectorAll(".Skills");
+      skillSections.forEach((section) => {
+        observer.observe(section);
       });
     </script>
   </body>

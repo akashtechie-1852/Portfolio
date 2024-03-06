@@ -34,7 +34,7 @@
           </li>
           <li><a href="#skill-section" style="--navAni: 3">Skills</a></li>
           <li><a href="#projects" style="--navAni: 4">Portfolio</a></li>
-          <li><a href="#" style="--navAni: 2">About</a></li>
+          <li><a href="#about" style="--navAni: 2">About</a></li>
           <li><a href="#contact-container" style="--navAni: 5">Contact</a></li>
         </ul>
       </div>
@@ -74,7 +74,7 @@
           </div>
         </div>
         <div class="detail">
-          <h3 style="color: white">Hi, I'm</h3>
+          <h3 style="color: black">Hi, I'm</h3>
           <h1>
             <span class="name">Nambi Rajan M</span><br />
             <h2 class="role">Full Stack Developer</h2>
@@ -92,42 +92,67 @@
     </section>
 
     <section id="skill-section" class="Skills-container">
-      <div class="skills-heading sub-heading">Skills</div>
+      <div class="skills-heading">SKILLS</div>
       <div id="skills">
         <div id="frontend-technlogies" class="Skills">
-          <h2>Frontend Technologies</h2>
-          <img src="./icons/html-5.png" alt="html5" />
-          <img src="./icons/css-3.png" alt="css3" />
-          <img src="./icons/js.png" alt="javascript" />
-          <img src="./icons/typescript.png" alt="typescript" />
+          <h2 class="skills-h2">Frontend Technologies :</h2>
+          <img src="./icons/html5.svg" alt="html5" />
+          <img src="./icons/css3.svg" alt="css3" />
+          <img src="./icons/js.svg" alt="javascript" style="width: 150px" />
+          <img src="./icons/ts.svg" alt="typescript" style="width: 150px" />
         </div>
 
-        <div id="backend-technologies" class="Skills">
-          <h2>Backend Technologies</h2>
-          <img src="./icons/api.png" alt="api" />
-          <img src="./icons/mysql.png" alt="mysql" />
-          <img src="./icons/nodejs.png" alt="node.js" />
-          <img src="./icons/php.png" alt="php" />
+        <div id="backend-technologies" class="Skills reverse">
+          <h2 class="skills-h2">Backend Technologies :</h2>
+          <!-- <img src="./icons/api.png" alt="api" /> -->
+          <img src="./icons/mysql.svg" alt="mysql" />
+          <img src="./icons/node js.svg" alt="node.js" />
+          <img src="./icons/php.svg" alt="php" />
         </div>
 
         <div id="framework-technologies" class="Skills">
-          <h2>Frameworks</h2>
-          <img src="./icons/sass.png" alt="sass" />
-          <img src="./icons/atom.png" alt="react.js" />
-          <img src="./icons/bootstrap1 (Custom).png" alt="bootstrap5" />
-          <img src="./icons/expressJS1.png" alt="express.js" />
-          <img src="./icons/pngwing.com.png" alt="next.js" />
+          <h2 class="skills-h2">Frameworks :</h2>
+          <img src="./icons/sass.svg" alt="sass" />
+          <img src="./icons/react.svg" alt="react.js" />
+          <img
+            src="./icons/bootstrap.svg"
+            alt="bootstrap5"
+            style="width: 125px"
+          />
+          <img
+            src="./icons/express js.svg"
+            id="express-icon"
+            alt="express.js"
+            width="104px"
+            height="64px"
+          />
+          <img src="./icons/nextjs.svg" alt="next.js" />
         </div>
 
-        <div id="tools" class="Skills">
-          <h2>Tools</h2>
-          <img src="./icons/github(2).png" alt="github" />
-          <img src="./icons/office.png" alt="ms-office" />
-          <img src="./icons/icons8-canva-48.png" alt="canva" />
-          <img src="./icons/icons8-npm-48.png" alt="npm" />
-          <img src="./icons/icons8-vs-code-48.png" alt="vs-ode" />
-          <img src="./icons/figma.png" alt="figma" />
-          <img src="./icons/photoshop-lightroom.png" alt="lightroom" />
+        <div id="tools" class="Skills reverse">
+          <h2 class="skills-h2">Tools :</h2>
+          <img src="./icons/git.svg" alt="github" style="width: 70px" />
+          <img src="./icons/github.svg" alt="github" />
+          <!-- <img src="./icons/office.png" alt="ms-office" /> -->
+          <!-- <img src="./icons/icons8-canva-48.png" alt="canva" /> -->
+          <img src="./icons/npm.svg" alt="npm" />
+          <img src="./icons/vs code.svg" alt="vs-ode" />
+          <img src="./icons/figma.svg" alt="figma" />
+          <img
+            src="./icons/photoshop.svg"
+            alt="lightroom"
+            style="width: 190px"
+          />
+        </div>
+        <div class="Skills" style="margin: -50px 0 0 200px">
+          <img src="./icons/npm.svg" alt="npm" />
+          <img src="./icons/vs code.svg" alt="vs-ode" />
+          <img src="./icons/figma.svg" alt="figma" />
+          <img
+            src="./icons/photoshop.svg"
+            alt="lightroom"
+            style="width: 190px"
+          />
         </div>
       </div>
     </section>
@@ -192,7 +217,7 @@
           </p>
         </div>
 
-        <div id="buspass-generator" class="projects-wrap">
+        <div id="buspass-generator" class="projects-wrap last-line-project">
           <h2 class="projects-heading">Buspass Generator</h2>
           <p class="projects-description">
             A bus pass generator app is a application designed to streamline the
@@ -200,7 +225,7 @@
           </p>
         </div>
 
-        <div id="bmi-calculator" class="projects-wrap">
+        <div id="bmi-calculator" class="projects-wrap last-line-project">
           <h2 class="projects-heading">BMI Calculator</h2>
           <p class="projects-description">
             BMI calculator can be used to calculate body mass index of people.
@@ -213,7 +238,7 @@
       <div class="about">
         <div id="about" class="sub-heading">About me</div>
         <div class="about-wrapper">
-          <p class="about-me">
+          <div class="about-me work-content">
             Emerging Full Stack Developer proficient in frontend technologies
             including HTML, CSS, Bootstrap, React, and Next.js, complemented by
             backend expertise in Node.js, Express.js, and PHP. Experienced in
@@ -222,7 +247,7 @@
             continuous learning and a passion for delivering high-quality
             solutions, I am poised to contribute effectively to projects and
             teams.
-          </p>
+          </div>
 
           <div class="Work-experience">Work Experiences</div>
 
@@ -400,7 +425,7 @@
                 link = "https://github.com/";
                 break;
               case "Portfolio Link":
-                link = "https://your-portfolio-link.com/";
+                link = "https://akash-m.netlify.app/";
                 break;
               default:
                 link = "#"; // Default to '#' if no matching link found

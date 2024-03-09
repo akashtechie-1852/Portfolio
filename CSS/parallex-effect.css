@@ -1,0 +1,28 @@
+/* Parallax effect for sections */
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Adjustments for specific sections */
+#container.parallax-section {
+  background-image: url("abstract-textured-backgound.jpg"); /* Replace 'background1.jpg' with your image path */
+}
+
+#skill-section.parallax-section {
+  background-image: url("abstract-luxury-blur-dark-grey-black-gradient-used-as-background-studio-wall-display-your-products.jpg"); /* Replace 'background2.jpg' with your image path */
+}
+
+#projects.parallax-section {
+  background-image: url("background3.jpg"); /* Replace 'background3.jpg' with your image path */
+}
+
+#about.parallax-section {
+  background-image: url("background4.jpg"); /* Replace 'background4.jpg' with your image path */
+}
+
+#contact-container.parallax-section {
+  background-image: url("background5.jpg"); /* Replace 'background5.jpg' with your image path */
+}

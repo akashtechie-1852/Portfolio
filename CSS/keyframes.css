@@ -1,0 +1,118 @@
+@keyframes fadeInAndOut {
+  0% {
+    opacity: 1;
+    letter-spacing: -10px;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  50% {
+    opacity: 1;
+    font-size: 2rem;
+    margin-top: 50px;
+    font-weight: 300;
+  }
+  100% {
+    opacity: 1;
+    font-size: 2rem;
+    margin-top: 50px;
+    letter-spacing: 3px;
+    font-weight: 300;
+  }
+}
+
+@keyframes loadLine {
+  0% {
+    width: 0;
+    left: 50%; /* Start from the center */
+  }
+  100% {
+    width: 100%; /* Expand to full width */
+    left: 1; /* Align to the left */
+  }
+}
+
+@keyframes Rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes Rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes Rotate-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes Rotate-reverse {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+/* Animation */
+@keyframes leftSideAni {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes navani {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes topSideAni {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Define the animation */
+@keyframes moveLeftToRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveRightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

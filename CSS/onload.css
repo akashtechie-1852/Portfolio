@@ -1,0 +1,59 @@
+.onload-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow: hidden; /* To hide the overflow content */
+  position: relative; /* Required for absolute positioning */
+}
+
+.roll-up,
+.roll-down {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  display: grid;
+  place-items: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+.roll-up {
+  top: 0;
+  transition: transform 1s ease-in-out;
+}
+
+.roll-down {
+  bottom: 0;
+  transition: transform 1s ease-in-out;
+}
+
+.animated-text {
+  color: white;
+  font-size: 3rem;
+  opacity: 0;
+  animation: fadeInAndOut 2s ease-in-out forwards;
+}
+
+.loading-line {
+  position: absolute;
+  top: calc(50% - 2px); /* Adjust based on line height */
+  left: 50%;
+  transform: translateX(-50%); /* Center the line */
+  height: 4px; /* Adjust based on line thickness */
+  width: 0; /* Start with zero width */
+  background-color: white;
+  animation: loadLine 2s ease-in-out forwards;
+}
+
+.main-page {
+  width: 100%;
+  height: 100%;
+}
+
+.onload-text {
+  position: absolute;
+  top: calc(50% - 100px); /* Adjust based on onload-text height */
+  left: 50%;
+  z-index: 111;
+  transform: translateX(-50%);
+}

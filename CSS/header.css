@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap");
+
+:root {
+  --primary-dark: white;
+  --primary-color: #ff6a3d;
+  --primary-gradient: linear-gradient(
+    to right,
+    #ff8a56,
+    #ffa84b,
+    #ff5e69,
+    #b16cea
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: white;
+  height: 100vh;
+}
+/* Genral */
+.container {
+  padding: 0 8.4rem;
+  border: #000 2px solid;
+}
+
+.img-w {
+  width: 100%;
+  height: auto;
+}
+/* Nav */
+header {
+  background-color: #000;
+  position: relative;
+  box-shadow: 0 4px 17px rgb(255 255 255 / 10%);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  opacity: 0;
+  animation: leftSideAni 1s ease forwards;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  gap: 0.6rem;
+  list-style-type: none;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+li a {
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  border-radius: 36px;
+  line-height: 2;
+  transition: 0.3s;
+  opacity: 0;
+  animation: navani 0.3s ease forwards;
+  animation-delay: calc(0.15s * var(--navAni));
+}
+
+li a.active,
+li a:hover {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #ff8a56,
+    #ffa84b,
+    #ff5e69,
+    #b16cea
+  );
+  /* text-fill-color: transparent; */
+  display: inline-block; /* This is necessary for Safari */
+}
+
+#click {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+.mode i {
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  opacity: 0;
+  animation: rightSideAni 1.5s ease forwards;
+}
+.name {
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #ff8a56,
+    #ffa84b,
+    #ff5e69,
+    #b16cea
+  );
+  /* text-fill-color: transparent; */
+  display: inline-block; /* This is necessary for Safari */
+}
+/* Nav End */
